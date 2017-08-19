@@ -173,34 +173,34 @@ class ViewController: UIViewController {
 //        stringsAsInts.updateValue(3, forKey: "three")
 //        print(stringsAsInts["three"])
         
-        var code = [
-            "a" : "b",
-            "b" : "c",
-            "c" : "d",
-            "d" : "e",
-            "e" : "f",
-            "f" : "g",
-            "g" : "h",
-            "h" : "i",
-            "i" : "j",
-            "j" : "k",
-            "k" : "l",
-            "l" : "m",
-            "m" : "n",
-            "n" : "o",
-            "o" : "p",
-            "p" : "q",
-            "q" : "r",
-            "r" : "s",
-            "s" : "t",
-            "t" : "u",
-            "u" : "v",
-            "v" : "w",
-            "w" : "x",
-            "x" : "y",
-            "y" : "z",
-            "z" : "a"
-        ]
+//        var code = [
+//            "a" : "b",
+//            "b" : "c",
+//            "c" : "d",
+//            "d" : "e",
+//            "e" : "f",
+//            "f" : "g",
+//            "g" : "h",
+//            "h" : "i",
+//            "i" : "j",
+//            "j" : "k",
+//            "k" : "l",
+//            "l" : "m",
+//            "m" : "n",
+//            "n" : "o",
+//            "o" : "p",
+//            "p" : "q",
+//            "q" : "r",
+//            "r" : "s",
+//            "s" : "t",
+//            "t" : "u",
+//            "u" : "v",
+//            "v" : "w",
+//            "w" : "x",
+//            "x" : "y",
+//            "y" : "z",
+//            "z" : "a"
+//        ]
         
 //        var message = "hello world"
 //        
@@ -216,7 +216,7 @@ class ViewController: UIViewController {
 //        print(encoded)
         
         
-        var encodedMessage = "uijt nfttbhf jt ibse up sfbe"
+//        var encodedMessage = "uijt nfttbhf jt ibse up sfbe"
         
         // your code here
 //        var decodedMessage = ""
@@ -266,7 +266,7 @@ class ViewController: UIViewController {
 //        print(fullNames)
         
         // 11.5 You are given an array of dictionaries. Each dictionary in the array describes the score of a person. Find the person with the best score and print his full name.
-        
+        /*
         var people: [[String:Any]] = [
             [
                 "firstName": "Calvin",
@@ -294,6 +294,7 @@ class ViewController: UIViewController {
                 "score": 16
             ]
         ]
+ */
         
 //        let score = people.map{($0["score"]!) as! Int}
 //        let highestScore = score.max()
@@ -335,6 +336,7 @@ class ViewController: UIViewController {
         //print(Example().eulerNumber2(10))
         //print(Example().factorial(10))
        // print(Example().findTheUnique(in: []))
+        /*
         let operations = [("exists", 10), ("insert", 10), ("exists", 10), ("delete", 10), ("exists", 10), ("insert", 2), ("insert", 3), ("insert", 4), ("exists", 3), ("exists", 5)]
         let hashtable = seperateChainingST()
         for operation in operations {
@@ -350,6 +352,10 @@ class ViewController: UIViewController {
                 break
             }
         }
+ */
+        let list = [1,2]
+        print(Example().accumulate(list, 2, *))
+        
         
         
 

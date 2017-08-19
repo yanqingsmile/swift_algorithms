@@ -1161,14 +1161,66 @@ struct Example {
 //        
 //    
 //    }
-    
- // perform a hashtable get and put functions
- // seperate chaining list
-    
+
  
     
+ //  Give you an array of integer, perform specified opertaitons. Return an array of integer.
     
+    func sumTripple(_ list: [Int]) -> [Int] {
+        
+        var sumList = [Int]()
+        if list.count >= 3 {
+            for i in 0...list.count - 3 {
+                let sum = list[i] + list[i + 1] + list[i + 2]
+                sumList.append(sum)
+            }
+        }
+        return sumList
+    }
     
+    func sum(_ list: [Int], _ n: Int) -> [Int] {
+        var sumList = [Int]()
+        if list.count >= n {
+            for i in 0...list.count - n {
+                var sum = 0
+                for j in i...i+n-1 {
+                    sum += list[j]
+                }
+                sumList.append(sum)
+            }
+        }
+        return sumList
+    }
+    
+    func multiply(_ list: [Int], _ n: Int) -> [Int] {
+        var multiplyList = [Int]()
+        if list.count >= n {
+            for i in 0...list.count - n {
+                var product = 1
+                for j in i...i+n-1 {
+                    product *= list[j]
+                }
+                multiplyList.append(product)
+            }
+        }
+        return multiplyList
+    }
+
+    // write a generic function that can be appiled to any two operators operation.
+    func accumulate(_ list: [Int], _ n: Int, _ operation:(Int, Int) -> Int) -> [Int] {
+        var resultList = [Int]()
+        if list.count >= n {
+            for i in 0...list.count - n {
+                var base = list[i]
+                for j in i+1...i+n-1 {
+                    base = operation(base, list[j])
+                }
+                resultList.append(base)
+            }
+        }
+        return resultList
+    }
+
     
     
 }
